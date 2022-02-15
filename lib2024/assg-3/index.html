@@ -3,55 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="keyword" content="Form">
-  <style>
+  <style> 
     form  { display: table;      }
     p     { display: table-row;  }
     label { display: table-cell; }
     input { display: table-cell; }
-  </style>
+  </style> <!-- form structure to neatly align input options -->
   <title>LIB2024 Assignment 3</title>
 </head>
 <body>
   <h1>Assignment 3 Submission Form</h1>
-  <section id="form-section" class="main-section">
-    <form action="somepage.php" method="get">
-      <div id="fn-container" class="form-elm">
+  <section id="form-section" class="main-section"> 
+    <form action="somepage.php" method="get"> <!-- Beginning of the form with placeholder page for action and default get for method -->
+      <div id="fn-container" class="form-elm"> <!-- First Name in text input-->
        <label for="FirstName">First Name</label>
        <input type="text" name="FirstName" id="FirstName" placeholder="First name here" required> 
      </div>
 
-     <div id="ln-container" class="form-elm">
+     <div id="ln-container" class="form-elm"> <!-- Last Name in text input-->
       <label for="LastName">Last Name</label>
       <input type="text" name="LastName" id="LastName" placeholder="Last name here" required>
     </div> <br>
 
-    <div id="email-container" class="form-elm">
+    <div id="email-container" class="form-elm"> <!-- Email input -->
       <label for="email">Email</label>
       <input type="email" name="email" id="email" placeholder="jane.doe@example.com" required>
     </div>
 
-    <div id="pass-container" class="form-elm">
+    <div id="pass-container" class="form-elm"> <!-- Password input-->
       <label for="pass">Password</label>
       <input type="password" name="pass" id="pass" placeholder="********" required>
     </div>
 
-    <div id="intro-container" class="form-elm">
+    <div id="intro-container" class="form-elm"> <!-- Intro with textarea -->
       <h3>Personal Information</h3>
       <label for="intro">Introductory Text</label>
       <textarea name="intro" id="intro" placeholder="Introduce yourself!"></textarea>
     </div>
 
-    <div id="dob-container" class="form-elm">
+    <div id="dob-container" class="form-elm"> <!-- DOB with date input -->
       <label for="dob">Date of Birth</label>
       <input type="date" name="dob" id="dob" required>
     </div>
 
-    <div id="mobile-container" class="form-elm">
+    <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting -->
       <label for="mobile-number">Mobile Number</label>
       <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
     </div>
 
-    <div id="gender-container" class="form-elm">
+    <div id="gender-container" class="form-elm"> <!-- Gender selection in raio input -->
       <p>Gender</p>
       <label for="female">
         <input type="radio" name="gender-form" id="female" value="female" checked>
@@ -67,22 +67,22 @@
       </label>
     </div>
 
-    <div id="address-container" class="form-elm">
+    <div id="address-container" class="form-elm"> <!-- Address in text input -->
       <h2>Address Information</h2>
       <label for="address">Address</label>
       <input type="text" name="address" id="address" placeholder="Adress Line 1"> 
     </div>
 
-    <div id="city-container" class="form-elm">
+    <div id="city-container" class="form-elm"> <!-- City in text input -->
       <label for="city">City</label>
       <input type="text" name="city" id="city" placeholder="City">
     </div>
 
-    <div id="province-container" class="form-elm">
+    <div id="province-container" class="form-elm"> <!-- Province and territory selection with select element for a dropdown -->
       <label for="province-territories">Province/Territory</label>
       <select name="province-territories" id="province-territories">
         <option value="select" selected>Select a province or territory</option>
-        <optgroup label="provinces">
+        <optgroup label="provinces"> <!-- optgroup used to organise provinces and territories -->
           <option value="alberta">Alberta</option>
           <option value="british_columbia">British-Columbia</option>
           <option value="manitoba">Manitoba</option>
@@ -100,7 +100,7 @@
           </select>
         </div>
 
-        <div id="country-container" class="form-elm">
+        <div id="country-container" class="form-elm"> <!-- countries in select element for a dropdown -->
           <label for="country">Country</label>
           <select name="country" id="country">
             <option value="select" selected>Select a country</option>
@@ -108,12 +108,12 @@
           </select>
         </div>
 
-        <div id="post-container" class="form-elm">
+        <div id="post-container" class="form-elm"> <!-- Postal code in a text input-->
           <label for="postal-code">Postal Code</label>
           <input type="text" name="postal-code" id="postal-code" placeholder="ex: A1A 1A1"> 
         </div>
 
-        <div id="hobbies-container" class="form-elm">
+        <div id="hobbies-container" class="form-elm"> <!-- hobbies in checbox inputs -->
           <h2>Hobbies and Interests</h2>
           <label for="sports">Sports</label>
           <input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
@@ -125,13 +125,13 @@
           <input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
         </div>
 
-        <div id="url-container" class="form-elm">
+        <div id="url-container" class="form-elm"> <!-- URL input -->
           <h2>Website</h2>
           <label for="url">Enter a URL</label>
           <input type="url" name="url" id="url" placeholder="https://google.com"> 
         </div> <br>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Submit</button> <!-- submission and reset buttons -->
         <button type="reset">Reset</button>
 
       </form>
