@@ -13,25 +13,26 @@
 </head>
 <body>
   <h1>Assignment 3 Submission Form</h1>
+  <p> * Indicates a required field </p>
   <section id="form-section" class="main-section"> 
     <form action="somepage.php" method="get"> <!-- Beginning of the form with placeholder page for action and default get for method -->
       <div id="fn-container" class="form-elm"> <!-- First Name in text input-->
-       <label for="FirstName">First Name</label>
+       <label for="FirstName">First Name*</label>
        <input type="text" name="FirstName" id="FirstName" placeholder="First name here" required> 
      </div>
 
      <div id="ln-container" class="form-elm"> <!-- Last Name in text input-->
-      <label for="LastName">Last Name</label>
+      <label for="LastName">Last Name*</label>
       <input type="text" name="LastName" id="LastName" placeholder="Last name here" required>
     </div> <br>
 
     <div id="email-container" class="form-elm"> <!-- Email input -->
-      <label for="email">Email</label>
+      <label for="email">Email*</label>
       <input type="email" name="email" id="email" placeholder="jane.doe@example.com" required>
     </div>
 
     <div id="pass-container" class="form-elm"> <!-- Password input-->
-      <label for="pass">Password</label>
+      <label for="pass">Password*</label>
       <input type="password" name="pass" id="pass" placeholder="********" required>
     </div>
 
@@ -42,19 +43,19 @@
     </div>
 
     <div id="dob-container" class="form-elm"> <!-- DOB with date input -->
-      <label for="dob">Date of Birth</label>
+      <label for="dob">Date of Birth*</label>
       <input type="date" name="dob" id="dob" required>
     </div>
 
     <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting -->
-      <label for="mobile-number">Mobile Number</label>
+      <label for="mobile-number">Mobile Number*</label>
       <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
     </div>
 
     <div id="gender-container" class="form-elm"> <!-- Gender selection in radio input -->
       <p>Gender</p>
       <label for="female">
-        <input type="radio" name="gender-form" id="female" value="female" checked>
+        <input type="radio" name="gender-form" id="female" value="female">
         Female
       </label>
       <label>
