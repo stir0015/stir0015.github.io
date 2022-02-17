@@ -2,7 +2,10 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <meta name="keyword" content="Form">
+  <meta name="description" content="This is a HTML document containing HTML tags" >
+  <meta name="keywords" content="HTML, HTML5, Advanced HTML, New Tags, Special Tags">
+  <meta name="robots" content="noindex, no follow">
+  <meta name="author" content="Jamie Stirling">
   <style> 
     form  { display: table;      }
     p     { display: table-row;  }
@@ -49,7 +52,7 @@
 
     <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting -->
       <label for="mobile-number">Mobile Number*</label>
-      <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+      <input type="tel" name="mobile-number" id="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
     </div>
 
     <div id="gender-container" class="form-elm"> <!-- Gender selection in radio input -->
@@ -83,7 +86,7 @@
       <label for="province-territories">Province/Territory</label>
       <select name="province-territories" id="province-territories">
         <option value="select" selected>Select a province or territory</option>
-        <optgroup label="provinces"> <!-- optgroup used to organise provinces and territories -->
+        <optgroup label="Provinces"> <!-- optgroup used to organise provinces and territories -->
           <option value="alberta">Alberta</option>
           <option value="british_columbia">British-Columbia</option>
           <option value="manitoba">Manitoba</option>
@@ -94,47 +97,49 @@
           <option value="prince_edward_island">Prince Edward Island</option>
           <option value="quebec">Quebec</option>
           <option value="saskatchewan">Saskatchewan</option>
-          <optgroup label="territories">
-            <option value="northwest_territories">Northwest Territories</option>
-            <option value="nunavut">Nunavut</option>
-            <option value="yukon">Yukon</option>
-          </select>
-        </div>
+        </optgroup>
+        <optgroup label="Territories">
+          <option value="northwest_territories">Northwest Territories</option>
+          <option value="nunavut">Nunavut</option>
+          <option value="yukon">Yukon</option>
+        </optgroup>
+      </select>
+    </div>
 
-        <div id="country-container" class="form-elm"> <!-- countries in select element for a dropdown -->
-          <label for="country">Country</label>
-          <select name="country" id="country">
-            <option value="select" selected>Select a country</option>
-            <option value="canada">Canada</option>
-          </select>
-        </div>
+    <div id="country-container" class="form-elm"> <!-- countries in select element for a dropdown -->
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="select" selected>Select a country</option>
+        <option value="canada">Canada</option>
+      </select>
+    </div>
 
-        <div id="post-container" class="form-elm"> <!-- Postal code in a text input-->
-          <label for="postal-code">Postal Code</label>
-          <input type="text" name="postal-code" id="postal-code" placeholder="ex: A1A 1A1"> 
-        </div>
+    <div id="post-container" class="form-elm"> <!-- Postal code in a text input-->
+      <label for="postal-code">Postal Code</label>
+      <input type="text" name="postal-code" id="postal-code" placeholder="ex: A1A 1A1"> 
+    </div>
 
-        <div id="hobbies-container" class="form-elm"> <!-- hobbies in checbox inputs -->
-          <h2>Hobbies and Interests</h2>
-          <label for="sports">Sports</label>
-          <input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
-          <label for="gaming">Gaming</label>
-          <input type="checkbox" name="hobbies" id="gaming" value="gaming"> <br>
-          <label for="baking">Baking</label>
-          <input type="checkbox" name="hobbies" id="baking" value="baking"> <br>
-          <label for="reading">Reading</label>
-          <input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
-        </div>
+    <div id="hobbies-container" class="form-elm"> <!-- hobbies in checbox inputs -->
+      <h2>Hobbies and Interests</h2>
+      <label for="sports">Sports</label>
+      <input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
+      <label for="gaming">Gaming</label>
+      <input type="checkbox" name="hobbies" id="gaming" value="gaming"> <br>
+      <label for="baking">Baking</label>
+      <input type="checkbox" name="hobbies" id="baking" value="baking"> <br>
+      <label for="reading">Reading</label>
+      <input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+    </div>
 
-        <div id="url-container" class="form-elm"> <!-- URL input -->
-          <h2>Website</h2>
-          <label for="url">Enter a URL</label>
-          <input type="url" name="url" id="url" placeholder="https://google.com"> 
-        </div> <br>
+    <div id="url-container" class="form-elm"> <!-- URL input -->
+      <h2>Website</h2>
+      <label for="url">Enter a URL</label>
+      <input type="url" name="url" id="url" placeholder="https://google.com"> 
+    </div> <br>
 
-        <button type="submit">Submit</button> <!-- submission and reset buttons -->
-        <button type="reset">Reset</button>
-      </form>
-    </section>
-  </body>
-  </html>
+    <button type="submit">Submit</button> <!-- submission and reset buttons -->
+    <button type="reset">Reset</button>
+  </form>
+</section>
+</body>
+</html>
