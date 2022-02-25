@@ -15,134 +15,146 @@
   <title>LIB2024 Assignment 3</title>
 </head>
 <body>
-  <h1>Assignment 3 Submission Form</h1>
-  <p> * Indicates a required field </p> <br>
   <section id="form-section" class="main-section"> 
     <form action="somepage.php" method="get"> <!-- Beginning of the form with placeholder page for action and default get for method -->
       <div id="fn-container" class="form-elm"> <!-- First Name in text input-->
+       <h1>Assignment 3 Submission Form</h1>
+       <p><i>* Indicates a required field</i></p> <br>
        <label for="FirstName">First Name*</label>
-       <input type="text" name="FirstName" id="FirstName" placeholder="First name here" required> 
+       <input type="text" name="FirstName" id="FirstName" title="Required field" placeholder="Jane" required>
      </div>
 
-     <div id="ln-container" class="form-elm"> <!-- Last Name in text input-->
-      <label for="LastName">Last Name*</label>
-      <input type="text" name="LastName" id="LastName" placeholder="Last name here" required>
-    </div> <br>
+      <div id="ln-container" class="form-elm"> <!-- Last Name in text input-->
+        <label for="LastName">Last Name*</label>
+        <input type="text" name="LastName" id="LastName" title="Required field" placeholder="Doe" required>
+      </div> <br>
 
-    <div id="email-container" class="form-elm"> <!-- Email input -->
-      <label for="email">Email*</label>
-      <input type="email" name="email" id="email" placeholder="jane.doe@example.com" required>
-    </div>
+      <div id="email-container" class="form-elm"> <!-- Email input -->
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" title="Required field"placeholder="jane.doe@example.com" required>
+      </div>
 
-    <div id="pass-container" class="form-elm"> <!-- Password input-->
-      <label for="pass">Password*</label>
-      <input type="password" name="pass" id="pass" placeholder="********" required>
-    </div>
+      <div id="pass-container" class="form-elm"> <!-- Password input-->
+        <label for="pass">Password*</label>
+        <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Required field. Must be at least 8 characters, include one number, and at least one uppercase and one lowercase letter" placeholder="********" required>
+      </div>
+      
+      <div id="intro-container" class="form-elm"> <!-- Personal intro in textarea -->
+        <h2>Personal Information</h2>
+        <label for="intro">Introductory Text</label>
+        <textarea name="intro" id="intro" placeholder="Introduce yourself!"></textarea>
+      </div> <br>
 
-    <h2>Personal Information</h2>
+      <div id="dob-container" class="form-elm"> <!-- DOB with date input -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+      </div> <br>
 
-    <div id="intro-container" class="form-elm"> <!-- Intro with textarea -->
-      <label for="intro">Introductory Text</label>
-      <textarea name="intro" id="intro" placeholder="Introduce yourself!"></textarea>
-    </div>
+      <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting for the user, used Canadian telephone number pattern -->
+        <label for="mobile-number">Mobile Number*</label>
+        <input type="tel" name="mobile-number" id="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Required field. Please include hyphens (-)" placeholder="123-456-7890" required>
+      </div> <br>
 
-    <div id="dob-container" class="form-elm"> <!-- DOB with date input -->
-      <label for="dob">Date of Birth*</label>
-      <input type="date" name="dob" id="dob" required>
-    </div>
+      <div id="gender-container" class="form-elm"> <!-- Gender selection in radio input, only one option can be selected -->
+        <p>Gender</p>
+        <label for="female">
+          <input type="radio" name="gender-form" id="female" value="female">
+          Female
+        </label>
+        <label>
+          <input type="radio" name="gender-form" id="male" value="male">
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender-form" id="nonbinary" value="nonbinary">
+          Nonbinary
+        </label>
+      </div> <br>
 
-    <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting, used telephone number pattern -->
-      <label for="mobile-number">Mobile Number*</label>
-      <input type="tel" name="mobile-number" id="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-    </div>
+      <fieldset> <!-- fieldset used to group address information section together with a border and title -->
+        <legend>Address Information:</legend> 
 
-    <div id="gender-container" class="form-elm"> <!-- Gender selection in radio input -->
-      <p>Gender</p>
-      <label for="female">
-        <input type="radio" name="gender-form" id="female" value="female">
-        Female
-      </label>
-      <label>
-        <input type="radio" name="gender-form" id="male" value="male">
-        Male
-      </label>
-      <label>
-        <input type="radio" name="gender-form" id="nonbinary" value="nonbinary">
-        Nonbinary
-      </label>
-    </div>
+        <div id="address-container" class="form-elm"> <!-- Address in text input -->
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="Address Line 1"> 
+        </div>
 
-    <h2>Address Information</h2>
+        <div id="city-container" class="form-elm"> <!-- City in text input -->
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="City">
+        </div>
 
-    <div id="address-container" class="form-elm"> <!-- Address in text input -->
-      <label for="address">Address</label>
-      <input type="text" name="address" id="address" placeholder="Address Line 1"> 
-    </div>
+        <div id="province-container" class="form-elm"> <!-- Province and territory selection with select element for a dropdown -->
+          <label for="province-territories">Province/Territory</label>
+          <select name="province-territories" id="province-territories">
+            <option value="select" selected>Select a province or territory</option>
+              <optgroup label="Provinces"> <!-- optgroup used to organise provinces and territories -->
+                <option value="alberta">Alberta</option>
+                <option value="british_columbia">British-Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="new_brunswick">New Brunswick</option>
+                <option value="newfounland_and_labrador">Newfoundland and Labrador</option>
+                <option value="nova_scotia">Nova Scotia</option>
+                <option value="ontario">Ontario</option>
+                <option value="prince_edward_island">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="saskatchewan">Saskatchewan</option>
+              </optgroup>
+              <optgroup label="Territories">
+                <option value="northwest_territories">Northwest Territories</option>
+                <option value="nunavut">Nunavut</option>
+                <option value="yukon">Yukon</option>
+              </optgroup>
+          </select>
+        </div>
 
-    <div id="city-container" class="form-elm"> <!-- City in text input -->
-      <label for="city">City</label>
-      <input type="text" name="city" id="city" placeholder="City">
-    </div>
+        <div id="country-container" class="form-elm"> <!-- countries in select element for a dropdown. Only used Canada since the only options are the Canadian provinces -->
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="select" selected>Select a country</option>
+            <option value="canada">Canada</option>
+          </select>
+        </div>
 
-    <div id="province-container" class="form-elm"> <!-- Province and territory selection with select element for a dropdown -->
-      <label for="province-territories">Province/Territory</label>
-      <select name="province-territories" id="province-territories">
-        <option value="select" selected>Select a province or territory</option>
-        <optgroup label="Provinces"> <!-- optgroup used to organise provinces and territories -->
-          <option value="alberta">Alberta</option>
-          <option value="british_columbia">British-Columbia</option>
-          <option value="manitoba">Manitoba</option>
-          <option value="new_brunswick">New Brunswick</option>
-          <option value="newfounland_and_labrador">Newfoundland and Labrador</option>
-          <option value="nova_scotia">Nova Scotia</option>
-          <option value="ontario">Ontario</option>
-          <option value="prince_edward_island">Prince Edward Island</option>
-          <option value="quebec">Quebec</option>
-          <option value="saskatchewan">Saskatchewan</option>
-        </optgroup>
-        <optgroup label="Territories">
-          <option value="northwest_territories">Northwest Territories</option>
-          <option value="nunavut">Nunavut</option>
-          <option value="yukon">Yukon</option>
-        </optgroup>
-      </select>
-    </div>
+        <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
+          <label for="postal-code">Postal Code</label>
+          <input type="text" name="postal-code" id="postal-code" pattern="[A-Z]{1}[0-9]{1}[A-Z]{1} [0-9]{1}[A-Z]{1}[0-9]{1}" title="Please use uppercase letters and include a space" placeholder="A1A 1A1"> 
+        </div>
+      </fieldset>
 
-    <div id="country-container" class="form-elm"> <!-- countries in select element for a dropdown -->
-      <label for="country">Country</label>
-      <select name="country" id="country">
-        <option value="select" selected>Select a country</option>
-        <option value="canada">Canada</option>
-      </select>
-    </div>
+      <div id="hobbies-container" class="form-elm"> <!-- hobbies in checbox inputs, more than one can be selected -->  
+        <h2>Hobbies and Interests</h2> 
 
-    <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
-      <label for="postal-code">Postal Code</label>
-      <input type="text" name="postal-code" id="postal-code" pattern="[A-Z]{1}[0-9]{1}[A-Z]{1} [0-9]{1}[A-Z]{1}[0-9]{1}" placeholder="A1A 1A1"> 
-    </div>
+        <label for="sports">
+          <input type="checkbox" name="hobbies" id="sports" value="sports"> 
+          Sports
+        </label> <br>
 
-    <h2>Hobbies and Interests</h2>
+        <label for="gaming">
+          <input type="checkbox" name="hobbies" id="gaming" value="gaming">
+          Gaming
+        </label> <br>
 
-    <div id="hobbies-container" class="form-elm"> <!-- hobbies in checbox inputs -->  
-      <label for="sports">Sports</label>
-      <input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
-      <label for="gaming">Gaming</label>
-      <input type="checkbox" name="hobbies" id="gaming" value="gaming"> <br>
-      <label for="baking">Baking</label>
-      <input type="checkbox" name="hobbies" id="baking" value="baking"> <br>
-      <label for="reading">Reading</label>
-      <input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
-    </div>
+        <label for="baking">
+          <input type="checkbox" name="hobbies" id="baking" value="baking">
+          Baking
+        </label> <br>
 
-    <div id="url-container" class="form-elm"> <!-- URL input -->
-      <h2>Website</h2>
-      <label for="url">Enter a URL</label>
-      <input type="url" name="url" id="url" placeholder="https://google.com"> 
-    </div> <br>
+        <label for="reading">
+          <input type="checkbox" name="hobbies" id="reading" value="reading"> 
+          Reading
+        </label>
+      </div>
 
-    <button type="submit">Submit</button> <!-- submission and reset buttons -->
-    <button type="reset">Reset</button>
-  </form>
-</section>
+      <div id="url-container" class="form-elm"> <!-- URL input, will require https:// as part of the link -->
+        <h2>Website</h2>
+        <label for="url">Enter a URL</label>
+        <input type="url" name="url" id="url" placeholder="https://google.com"> 
+      </div> <br>
+
+      <button type="submit">Submit</button> <!-- submission and reset buttons -->
+      <button type="reset">Reset</button>
+    </form>
+  </section>
 </body>
 </html>
