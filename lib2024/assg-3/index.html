@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="This is a HTML document containing HTML tags" >
   <meta name="keywords" content="HTML, HTML5, Advanced HTML, New Tags, Special Tags">
-  <meta name="robots" content="noindex, no follow">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Jamie Stirling">
   <style> 
     form  { display: table;      }
@@ -14,12 +14,14 @@
   </style> <!-- form structure to neatly align input options -->
   <title>LIB2024 Assignment 3</title>
 </head>
-<body>
+<header>
+  <h1>Assignment 3 Submission Form</h1>
+  <p><i>* Indicates a required field</i></p>
+</header>
+<main>
   <section id="form-section" class="main-section"> 
     <form action="somepage.php" method="get"> <!-- Beginning of the form with placeholder page for action and default get for method -->
       <div id="fn-container" class="form-elm"> <!-- First Name in text input-->
-       <h1>Assignment 3 Submission Form</h1>
-       <p><i>* Indicates a required field</i></p> <br>
        <label for="FirstName">First Name*</label>
        <input type="text" name="FirstName" id="FirstName" title="Required field" placeholder="Jane" required>
      </div>
@@ -31,7 +33,7 @@
 
       <div id="email-container" class="form-elm"> <!-- Email input -->
         <label for="email">Email*</label>
-        <input type="email" name="email" id="email" title="Required field"placeholder="jane.doe@example.com" required>
+        <input type="email" name="email" id="email" title="Required field" placeholder="jane.doe@example.com" required>
       </div>
 
       <div id="pass-container" class="form-elm"> <!-- Password input-->
@@ -50,7 +52,7 @@
         <input type="date" name="dob" id="dob">
       </div> <br>
 
-      <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the num input for better formatting for the user, used Canadian telephone number pattern -->
+      <div id="mobile-container" class="form-elm"> <!-- Mobile number with tel input instead of the number input for better formatting for the user, used Canadian telephone number pattern -->
         <label for="mobile-number">Mobile Number*</label>
         <input type="tel" name="mobile-number" id="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Required field. Please include hyphens (-)" placeholder="123-456-7890" required>
       </div> <br>
@@ -156,5 +158,5 @@
       <button type="reset">Reset</button>
     </form>
   </section>
-</body>
+</main>
 </html>
