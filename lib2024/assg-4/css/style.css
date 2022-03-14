@@ -1,12 +1,73 @@
 @charset "utf-8";
 
-h1 {
+      header {
+       background: #7cc576;
+       padding: 0px 50px 40px 50px; 
+     }
 
-	font-family: 'open_sansregular', sans-serif;
-}
+     html, body, main {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
 
-p {
+    #bigkitty {
+      margin-top: 20px;
+      width: 15%; 
+      float: left;
+    }
 
-	font-family: 'open_sansregular', sans-serif;
+    #bigtitle  {
+      position: relative;
+      font-size: 60px;
+      top: 50px;
+      left: 50px;
+      margin: 0px 100px 150px 100px;
+    }
 
-}
+    span {
+      background: #6dcff6; 
+      font-size: 30px;
+      padding: 20px 85px 20px 85px; 
+      margin: 30px
+    }
+
+    div.sidepiece {
+      float: right;
+      margin: 40px 20px 20px 20px;
+      width: 30%;
+    } 
+
+    article#first-main {
+      margin: 20px;
+      width: 70%;
+    } 
+
+    h3#second-title {
+    	margin-left: 20px;
+    }  
+
+    .image-collection {
+      display: flex;
+    } 
+
+    .images {
+      flex: 33.33%;
+      padding: 5px;
+    }    
+
+    figcaption {
+    	text-align: center;
+    }
+
+    #soc-links {
+      position: relative;
+      left: 1100px;
+      bottom: 50px;
+    }
+
+    footer {
+      background: #7cc576;
+      padding: 50px 50px 0px 50px;
+    }
+

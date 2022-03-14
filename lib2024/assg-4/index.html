@@ -7,121 +7,77 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Jamie Stirling">
     <title>LIB2024 Assignment 4</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
     <style type="text/css">
       main {
-        background: url("img/leaves.png");
+        background: url("img/bubble.png");
       }
-
-      header {
-       background: #7cc576;
-       padding: 0px 50px 50px 50px; 
-     }
-     html, body, div, span, applet, object, iframe,
-     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-     a, abbr, acronym, address, big, cite, code,
-     del, dfn, em, img, ins, kbd, q, s, samp,
-     small, strike, strong, sub, sup, tt, var,
-     b, u, i, center,
-     dl, dt, dd, ol, ul, li,
-     fieldset, form, label, legend,
-     table, caption, tbody, tfoot, thead, tr, th, td,
-     article, aside, canvas, details, embed, 
-     figure, figcaption, footer, hgroup, 
-     menu, nav, output, ruby, section, summary,
-     time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      vertical-align: baseline;
-    }
-    nav {
-      background: #6dcff6;
-    }
-
-    #bigkitty {
-      position: relative;
-      top: 10px;
-      width: 15%;
-      float: left; 
-    }
-
-    #bigtitle  {
-      position: static;
-      top: 50px;
-      left: 50px;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #6dcff6;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
-      padding: 8px;
-    }
-
-
-
-    footer {
-      background: #7cc576;
-      padding: 50px;
-    }
-
-    </style>    
+    </style>  
   </head>
   <header>
-    <div>
+    <div id="top-title" class="top-banner">
       <img src="img/logo.png" id="bigkitty" class="logo" alt="Kitties 4 Lyfe Logo">
       <h1 id="bigtitle" class="logo">Kitties 4 Lyfe</h1>
     </div>
 
-    <nav id="home" class="links">
-      <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="aboutpage.html">About</a></li>
-        <li><a href="contactpage.html">Contact</a></li>
-        <li><a href="workpage.html">Work</a></li>
-      </ul>
-    </nav>
+    <div id="not-links" class="top-banner">
+      <span>Home</span>
+      <span>About</span>
+      <span>Contact</span>
+      <span>Work</span>
+    </div>
   </header>
-<main>
-  <article id="first-main" class="main-article">
-    <h2>Main Content Title</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida quam eget nisi accumsan pretium. Nam dolor enim, ultrices quis tincidunt ut, pellentesque nec velit. Suspendisse elementum leo at risus pharetra semper. Nullam sagittis purus id lorem hendrerit consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sodales eros nec scelerisque ultrices. Proin at tristique orci, ut auctor dui. Phasellus et sodales turpis. Mauris molestie nulla id tortor laoreet, id vehicula diam dignissim. Morbi vitae augue ante. Maecenas nisi diam, malesuada vitae velit sed, fringilla scelerisque nisi. </p> <br>
 
-    <p>Duis nisl ante, congue ac sapien a, sagittis sagittis risus. Quisque porta erat ut mattis rutrum. Cras a nibh id nisl rutrum eleifend accumsan vel enim. In a ligula sem. Fusce vestibulum felis non erat mollis tincidunt. Proin quam lorem, posuere at dolor vitae, sodales luctus dolor. Praesent sit amet nibh tincidunt, egestas tellus ut, accumsan turpis. Duis gravida hendrerit lorem, eu blandit mi hendrerit mattis. Curabitur efficitur fringilla convallis.</p>
-  </article>
-  <article id="second-main" class="main-article">
-    <h3>Secondary Content Title</h3>
-    <figure id="image-1" class="images">
-      <img src="img/logo.png" alt="Kitty" width="100" height="100">
-      <figcaption>Image 1</figcaption>
-    </figure>
-    <figure id="image-1" class="images">
-      <img src="img/logo.png" alt="Kitty" width="100" height="100">
-      <figcaption>Image 2</figcaption>
-    </figure>
-    <figure id="image-1" class="images">
-      <img src="img/logo.png" alt="Kitty" width="100" height="100">
-      <figcaption>Image 3</figcaption>
-    </figure>
-  </article>
-</main>
-<footer>
-  <p>CopyRight 2022, All Rights Reserved.</p>
-  <img src="img/facebook.png">
-  <img src="img/twitter.png">
-  <img src="img/youtube.png">
-</footer>
+  <main>
+    <div id="sidebar" class="sidepiece">
+      <figure id="image-1" class="image-side">
+        <img src="img/kitt1.jpg" alt="Kitty" width="325" height="200">
+      </figure>
+      <h3>Kitties Are Cute</h3>
+      <p>Fusce vestibulum felis non erat mollis tincidunt. Proin quam lorem, posuere at dolor vitae, sodales luctus dolor.</p>
+    </div>
+
+    <article id="first-main" class="main-article">
+      <h2>Why Kitties are Great</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida quam eget nisi accumsan pretium. Nam dolor enim, ultrices quis tincidunt ut, pellentesque nec velit. Suspendisse elementum leo at risus pharetra semper. Nullam sagittis purus id lorem hendrerit consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque porta erat ut mattis rutrum. Cras a nibh id nisl rutrum eleifend accumsan vel enim. Nunc sodales eros nec scelerisque ultrices. Proin at tristique orci, ut auctor dui. Phasellus et sodales turpis. Mauris molestie nulla id tortor laoreet, id vehicula diam dignissim. Morbi vitae augue ante. Maecenas nisi diam, malesuada vitae velit sed, fringilla scelerisque nisi. </p>
+
+      <p>Duis nisl ante, congue ac sapien a, sagittis sagittis risus. Quisque porta erat ut mattis rutrum. Cras a nibh id nisl rutrum eleifend accumsan vel enim. In a ligula sem. Fusce vestibulum felis non erat mollis tincidunt. Proin quam lorem, posuere at dolor vitae, sodales luctus dolor. Praesent sit amet nibh tincidunt, egestas tellus ut, accumsan turpis. Duis gravida hendrerit lorem, eu blandit mi hendrerit mattis. Curabitur efficitur fringilla convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sodales eros nec scelerisque ultrices. Proin at tristique orci, ut auctor dui. Phasellus et sodales turpis. Mauris molestie nulla id tortor laoreet, id vehicula diam dignissim.</p>
+    </article>
+
+    <h3 id="second-title" class="floating-title">Good Kitties</h3>
+
+    <article id="secondary" class="image-collection">
+      <figure id="image-2" class="images">
+        <img src="img/kitt2.jpg" alt="Kitten with some lights" width="350" height="250">
+        <figcaption id="cap1" class="caps">Kitten with some lights</figcaption>
+      </figure>
+      <figure id="image-1" class="images">
+        <img src="img/kitt3.jpg" alt="Kitten with a flower" width="350" height="250">
+        <figcaption id="cap2" class="caps">Kitten with a flower</figcaption>
+      </figure>
+      <figure id="image-1" class="images">
+        <img src="img/kitt4.jpg" alt="Kitten with some grass" width="350" height="250">
+        <figcaption id="cap3" class="caps">Kitten with some grass</figcaption>
+      </figure>
+    </article>
+
+  </main>
+  <footer>
+    <div id="bottom" class="bottom-banner">
+      <p>CopyRight 2022, All Rights Reserved.</p>
+    </div>
+    <div id="soc-links" class="soc-logos">
+      <a href="https://www.facebook.com/" title="Link to Facebook Page"> 
+        <img src="img/facebook.png">
+      </a>
+      <a href="https://www.youtube.com/" title="Link to Youtube Channel"> 
+        <img src="img/youtube.png">
+      </a>
+      <a href="https://www.twitter.com/" title="Link to Twitter Page"> 
+        <img src="img/twitter.png">
+      </a>
+      
+      
+    </div>
+  </footer>
 </html>
