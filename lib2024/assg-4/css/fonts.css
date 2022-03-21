@@ -1,4 +1,10 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('../fonts/open_sans/stylesheet.css')
+@font-face{ 
+	font-family: 'Aileron';
+	src: url('Aileron.eot');
+	src: url('Aileron.eot?iefix') format('eot'),
+	     url('Aileron.woff') format('woff'),
+	     url('Aileron.ttf') format('truetype'),
+	     url('Aileron.svg#webfont') format('svg');
+}

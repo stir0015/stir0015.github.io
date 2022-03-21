@@ -1,73 +1,163 @@
 @charset "utf-8";
 
-      header {
-       background: #7cc576;
-       padding: 0px 50px 40px 50px; 
-     }
 
-     html, body, main {
-      margin: 0;
-      padding: 0;
-      border: 0;
-    }
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-    #bigkitty {
-      margin-top: 20px;
-      width: 15%; 
-      float: left;
-    }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-    #bigtitle  {
-      position: relative;
-      font-size: 60px;
-      top: 50px;
-      left: 50px;
-      margin: 0px 100px 150px 100px;
-    }
+/*CSS clearfix*/
 
-    span {
-      background: #6dcff6; 
-      font-size: 30px;
-      padding: 20px 85px 20px 85px; 
-      margin: 30px
-    }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-    div.sidepiece {
-      float: right;
-      margin: 40px 20px 20px 20px;
-      width: 30%;
-    } 
 
-    article#first-main {
-      margin: 20px;
-      width: 70%;
-    } 
+/*
+  Color Pallete
 
-    h3#second-title {
-    	margin-left: 20px;
-    }  
+  Primary Blue : #1976D2;
+  Light blue : #BBDEFB;
+  Primary Text : #212121;
+  Gray : #757575;
+  Orange : #FF5722;
+  Red : #F44336;
+  Yellow : #FFEB3B;
+*/
 
-    .image-collection {
-      display: flex;
-    } 
+/************************
+    MOBILE FIRST
+************************/
 
-    .images {
-      flex: 33.33%;
-      padding: 5px;
-    }    
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
 
-    figcaption {
-    	text-align: center;
-    }
+.desktop-nav {
+  width: calc(100% - 100px);
+  display: none;
+  max-width: 960px;
+}
 
-    #soc-links {
-      position: relative;
-      left: 1100px;
-      bottom: 50px;
-    }
+header {
+ background: #7cc576;
+ padding-bottom: 40px;
+}
 
-    footer {
-      background: #7cc576;
-      padding: 50px 50px 0px 50px;
-    }
+h1, h2, h3 {
+  font-family: 'aileronblack';
+}
+
+#bigkitty {
+  padding-top: 20px;
+  width: 15%; 
+  float: left;
+}
+
+#bigtitle  {
+  position: relative;
+  top: 75px;
+  font-size: 60px;
+  margin-bottom: 15%;
+}
+
+span {
+  background: #6dcff6; 
+  font-size: 30px;
+  padding: 20px 85px 20px 85px; 
+  margin: 3%
+}
+
+#first-section {
+  width: 100%;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+#sidebar {
+  float: right;
+  padding-top: 70px;
+  padding-left: 20px;
+  width: 30%;
+} 
+
+#first-main {
+  width: 70%;
+} 
+
+#second-title {
+ margin-left: 20px;
+}  
+
+.image-collection {
+  display: flex;
+  width: 100%;
+} 
+
+.images {
+  flex: 33%;
+  padding: 1%;
+}    
+
+.caps {
+ text-align: center;
+}
+
+#soc-links {
+  position: relative;
+  left: 80%;
+  bottom: 30px
+}
+
+footer {
+  background: #7cc576;
+  padding: 50px 50px 0px 50px;
+  width: 100%;
+}
 
