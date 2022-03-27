@@ -61,6 +61,11 @@ img {
   clear: both;
 }
 
+.top-banner {grid-area: header}
+.side-info {grid-area: right;}
+.main-info {grid-area: main;}
+.gallery {grid-area: footer;}
+
 header {
  background: #7cc576;
  padding-bottom: 40px;
@@ -155,5 +160,5 @@ footer {
   width: 100%;
 }
 
-/* Footer styling ^ */
+/* Footer styling */
 
