@@ -63,6 +63,10 @@ img {
 
 /* header styling */
 
+.top-banner, .main-page, .bottom-banner {
+  max-width: 960px;
+}
+
 header {
  background: #7cc576;
  padding-bottom: 40px;
@@ -89,7 +93,7 @@ a {
 span {
   background: #6dcff6; 
   font-size: 30px;
-  padding: 20px 85px 20px 85px; 
+  padding: 2% 5% 2% 5%; 
   border-radius: 5px;
   margin: 3%
 }
@@ -107,6 +111,8 @@ h3 {
 }
 
 /* Main Body styling */
+
+
 
 #first-section {
   width: 100%;
