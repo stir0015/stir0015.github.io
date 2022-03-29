@@ -70,6 +70,7 @@ img {
 header {
  background: #7cc576;
  padding-bottom: 40px;
+ max-width: 960px;
 }
 
 #bigkitty {
@@ -105,11 +106,6 @@ h2 {
   font-size: 120%;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 100%;
-}
-
 /* Main Body styling */
 
 #first-section {
@@ -128,13 +124,15 @@ h3 {
 
 #first-main {
   width: 70%;
-} 
-
-#second-title {
- margin-left: 20px;
 }  
 
 /* Image gallery styling */
+
+h3 {
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: 20px;
+}
 
 .image-collection {
   display: flex;
