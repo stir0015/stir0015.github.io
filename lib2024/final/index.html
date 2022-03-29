@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">  
     <style type="text/css">
       main {
-        background: url("img/pw_pattern.png");
+        background: url("img/dust_scratches.png");
       }
     </style> 
     <!-- Included background styling here because the linking would not work in the external style sheet -->
@@ -28,7 +28,7 @@
     </nav>
   </header>
   <main class="main">
-    <section id="first-section" class="main-section">
+    <section id="first-section" class="main-section clearfix">
       <aside id="img-aside">
         <figure id="image-1" class="image-side">
           <img src="img/mountain.png" alt="Mountain scene">
@@ -45,7 +45,7 @@
     <section id="sched-section" class="main-section">
       <h2>Schedule</h2> <br>
       <table>
-        <tr style="color: #72a9ae;">
+        <tr>
           <th>TIME</th>
           <th>MONDAY</th>
           <th>TUESDAY</th>
@@ -89,30 +89,42 @@
     </section> <br>
 
     <section id="profile-section" class="main-section">
-      <article id="form-display" class="profile">
+      <div id="form-display" class="profile">
         <h2>Profile Info</h2>
-      </article>
-      <article id="form" class="profile">
+          <p>Name: <span id="full-name_result"></span></p>
+          <p>Email: <a href="#" id="email_result"></a></p>
+          <p>Address: <span id="address_result"></span></p>
+          <p>City: <span id="city_result"></span></p>
+          <p>P/T: <span id="province-territories_result"></span></p>
+          <p>Postal Code: <span id="postal-code_result"></span></p>
+        </div>
+
+      <article id="form" class="profile clearfix">
         <h2>Edit Profile</h2> <br>
-        <form action="somepage.php" method="get">
+        <form action="submit.php" method="post" id="profile" class="clearfix">
+
           <div id="name-container" class="form-elm">
             <label for="full-name">Name</label>
             <input type="text" name="name" id="full-name" title="Enter first and last name">
           </div>
+
           <div id="email-container" class="form-elm">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" title="Enter email">
           </div>
+
           <div id="address-container" class="form-elm">
             <label for="address">Address</label>
-            <input type="text" name="address" id="address"> 
+            <input type="text" name="address" id="address" title="Enter Address Line 1"> 
           </div>
+
           <div id="city-container" class="form-elm">
             <label for="city">City</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" title="Enter City">
           </div>
+
           <div id="province-container" class="form-elm">
-            <label for="province-territories">Province/Territory</label>
+            <label for="province-territories">Province/ Territory</label>
             <select name="province-territories" id="province-territories">
               <option value="select" selected>Select a province or territory</option>
               <optgroup label="Provinces">
@@ -133,14 +145,17 @@
                 <option value="yukon">Yukon</option>
               </optgroup>
             </select>
+
           </div>
           <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
             <label for="postal-code">Postal Code</label>
             <input type="text" name="postal-code" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space."> 
           </div>
-          <button type="submit">Submit</button>
+
+          <button type="submit">SUBMIT</button>
         </form>
       </article>
+      <script type="text/javascript" src="js/scripts.js"></script>
     </section>
 
   </main>
@@ -155,7 +170,7 @@
         <li><a class="qlinks" href="#about">Contact</a></li>
       </ul>
     </nav>
-    <div id="gonq-address" class="bottom-banner">
+    <div id="gonqwc" class="bottom-banner">
       <h3>Address</h3>
       <p style="color: white;"> 1386 Woodroffe Ave. <br>
       Nepean, ON K2G 1V8 <br>
