@@ -6,12 +6,171 @@
     <meta name="keywords" content="HTML, HTML5, Advanced HTML, New Tags, Special Tags">
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Jamie Stirling">
-    <title>LIB2024 Assignment 4</title>
+    <title>LIB2024 Final Assignment</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">  
     <style type="text/css">
-      .main-page {
-        background: url("img/bubble.png");
+      main {
+        background: url("img/pw_pattern.png");
       }
     </style> 
     <!-- Included background styling here because the linking would not work in the external style sheet -->
   </head>
+  <header>
+    <h1> My Logo Title </h1>
+    <nav id="main-nav" class="top-banner">
+      <ul class="link-container">
+        <li id="hlink" class="page-links"><a class="page-links" href="#home">Home</a></li>
+        <li id="alink" class="page-links"><a class="page-links" href="#about">About</a></li>
+        <li id="slink" class="page-links"><a class="page-links" href="#chedule">Schedule</a></li>
+        <li id="plink" class="page-links"><a class="page-links" href="#portfolio">Portfolio</a></li>
+        <li id="clink" class="page-links"><a class="page-links" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="first-section" class="main-section">
+      <aside id="img-aside">
+        <figure id="image-1" class="image-side">
+          <img src="img/mountain.png" alt="Mountain scene">
+        </figure>
+      </aside>
+      <article>
+        <h2>About</h2> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris magna, pulvinar id interdum id, varius et tellus. Praesent eu aliquam elit. Sed eu viverra enim. Nullam in semper ligula. Maecenas at elit eget quam interdum tristique eu eget lectus. Sed lorem lectus, aliquet eu eleifend eget, cursus in mi. Proin ut lectus mollis, luctus diam eget, finibus eros. Vivamus vitae nisl posuere, rhoncus arcu a, viverra purus. Proin, dignissim ac lacus at, interdum sagittis libero. Vestibulum pharetra lacus id lectus commodo imperdiet. Sed laoreet eu mauris id accumsan. </p><br>
+
+        <p>Maecenas posuere tincidunt fermentum. Curabitur faucibus tristique nibh at suscipit. Morbi semper lorem venenatis tortor rhoncus, a finibus lectus euismod. Ut ante velit, facilisis nec dictum quis, vulputate vel enim. Donec bibendum fermentum porta. Donec mi sem, eleifend non lorem. Etiam dui erat, imperdiet sed leo at, euismod efficitur nibh.<p> <br>
+        </article>
+    </section>
+
+    <section id="sched-section" class="main-section">
+      <h2>Schedule</h2> <br>
+      <table>
+        <tr style="color: #72a9ae;">
+          <th>TIME</th>
+          <th>MONDAY</th>
+          <th>TUESDAY</th>
+          <th>WEDNESDAY</th>
+          <th>THURSDAY</th>
+          <th>FRIDAY</th>
+        </tr>
+        <tr>
+          <td>09:00 - 11:00</td>
+          <td>Communications 1</td>
+          <td>Client Services</td>
+          <td>Special Collections</td>
+          <td>Directed Research Seminar</td>
+          <td>Client Services</td>
+        </tr>
+        <tr>
+          <td>11:00 - 12:30</td>
+          <td>Reference</td>
+          <td>Internet App</td>
+          <td>Library Software</td>
+          <td>French</td>
+          <td>Reference</td>
+        </tr>
+        <tr>
+          <td>14:00 - 15:00</td>
+          <td>Acquisitions</td>
+          <td>General Elective</td>
+          <td>Marketing</td>
+          <td>Emerging Library Tech</td>
+          <td>Library Software</td>
+        </tr>
+        <tr>
+          <td>15:30 - 17:30</td>
+          <td>French</td>
+          <td>French</td>
+          <td>Acquisitions</td>
+          <td>Subject Analysis</td>
+          <td>Internet App</td>
+        </tr>
+      </table>
+    </section> <br>
+
+    <section id="profile-section" class="main">
+      <article id="form" class="profile">
+        <h2>Edit Profile</h2>
+        <form action="somepage.php" method="get">
+          <div id="name-container" class="form-elm">
+            <label for="full-name">Name:</label>
+            <input type="text" name="name" id="full-name" title="Enter first and last name">
+          </div>
+          <div id="email-container" class="form-elm">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" title="Enter email">
+          </div>
+          <div id="address-container" class="form-elm">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address"> 
+          </div>
+          <div id="city-container" class="form-elm">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div id="province-container" class="form-elm">
+            <label for="province-territories">Province/Territory</label>
+            <select name="province-territories" id="province-territories">
+              <option value="select" selected>Select a province or territory</option>
+              <optgroup label="Provinces">
+                <option value="alberta">Alberta</option>
+                <option value="british_columbia">British-Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="new_brunswick">New Brunswick</option>
+                <option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
+                <option value="nova_scotia">Nova Scotia</option>
+                <option value="ontario">Ontario</option>
+                <option value="prince_edward_island">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="saskatchewan">Saskatchewan</option>
+              </optgroup>
+              <optgroup label="Territories">
+                <option value="northwest_territories">Northwest Territories</option>
+                <option value="nunavut">Nunavut</option>
+                <option value="yukon">Yukon</option>
+              </optgroup>
+            </select>
+          </div>
+          <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
+            <label for="postal-code">Postal Code</label>
+            <input type="text" name="postal-code" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space."> 
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+      <article>
+        <h2>Profile Info</h2>
+      </article>
+    </section>
+
+  </main>
+  <footer class="bottom-banner">
+    <nav id="second-nav" class="bottom-banner">
+      <h3>Quick Links</h3>
+      <ul id="quick-links">
+        <li><a class="qlinks" href="#home">Home</a></li>
+        <li><a class="qlinks" href="#news">About</a></li>
+        <li><a class="qlinks" href="#contact">Schedule</a></li>
+        <li><a class="qlinks" href="#about">Portfolio</a></li>
+        <li><a class="qlinks" href="#about">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="soc-links" class="bottom-banner">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/" title="Link to Facebook Page"> 
+        <img id="fb" class="link-logo" alt="Facebook Logo" src="img/facebook.png">
+      </a>
+      <a href="https://www.youtube.com/" title="Link to Youtube Channel"> 
+        <img id="yt" class="link-logo" alt="YouTube Logo" src="img/youtube.png">
+      </a>
+      <a href="https://www.twitter.com/" title="Link to Twitter Page"> 
+        <img id="tw" class="link-logo" alt="Twitter Logo" src="img/twitter.png">
+      </a>
+    </nav>
+    <div id="gonq-address" class="bottom-banner">
+      <h3>Address</h3>
+      <p style="color: white;"> 1386 Woodroffe Ave. <br>
+      Nepean, ON K2G 1V8 <br>
+      Canada</p>
+    </div>
+  </footer>

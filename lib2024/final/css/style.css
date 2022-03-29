@@ -60,3 +60,108 @@ img {
   display: table;
   clear: both;
 }
+
+h1 {
+  color: #72a9ae;
+  padding: 2%;
+  font-size: 200%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.link-container {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 5%;
+  overflow: hidden;
+  background-color: #72a9ae;
+}
+
+.page-links {
+  float: left;
+}
+
+.page-links a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.page-links a:hover {
+  background-color: #e1e3e3;
+}
+
+h2 {
+  color: #72a9ae;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.main {
+  width: 100%;
+  padding: 2% 3%;
+}
+
+#about-info {
+  width: 70%;
+  padding-right: 7%;
+}
+
+#img-aside {
+  float: right;
+  width: 30%;
+  padding: 3% 4% 0 3%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #e1e3e3;
+}
+
+footer {
+  background-color: #454545;
+}
+
+h3 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.bottom-banner {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+#second-nav {
+float: left;
+width: 33%;
+}
+
+.link-logo {
+  width: 50px;
+  height: auto;
+}
+
+#gonq-address {
+  float: right;
+  width: 33%;
+}
+
+.qlinks {
+  text-decoration: none;
+  color: white;
+}
