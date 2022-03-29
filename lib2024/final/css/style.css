@@ -104,9 +104,9 @@ h2 {
   font-size: 150%;
 }
 
-.main {
+.main-section {
   width: 100%;
-  padding: 2% 3%;
+  padding: 2% 3% 2% 3%;
 }
 
 #about-info {
@@ -131,6 +131,20 @@ tr:nth-child(even) {
   background-color: #e1e3e3;
 }
 
+#profile-section {
+  width: 100%;
+}
+
+#form-display {
+  float: right;
+  width: 50%;
+}
+
+#form {
+  width: 50%;
+  padding-right: 5%;
+}
+
 footer {
   background-color: #454545;
 }
@@ -143,7 +157,7 @@ h3 {
 
 .bottom-banner {
   width: 100%;
-  padding-bottom: 100%;
+  padding: 1% 2% 4% 2%;
 }
 
 #second-nav {
@@ -151,9 +165,9 @@ float: left;
 width: 33%;
 }
 
-.link-logo {
-  width: 50px;
-  height: auto;
+.qlinks {
+  text-decoration: none;
+  color: white;
 }
 
 #gonq-address {
@@ -161,7 +175,10 @@ width: 33%;
   width: 33%;
 }
 
-.qlinks {
-  text-decoration: none;
-  color: white;
+.link-logo {
+  width: 50px;
+  height: auto;
 }
+
+
+
