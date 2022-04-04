@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+p {
+  font-family: sans-serif;
+}
+
+#qcenter {
+  position: absolute;
+  border: solid 1px black;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+}
+
+.rotate-me {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: maroon;
+  color: white;
+  animation: spin 0.5s 5;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+
+#transition:hover {
+  width: 300px;
+}
+
+@keyframes spin {
+  100% {transform: rotate(360deg);}
+}

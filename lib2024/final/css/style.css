@@ -61,6 +61,10 @@ img {
   clear: both;
 }
 
+header, main, footer{
+  max-width: 1024px;
+}
+
 h1 {
   color: #72a9ae;
   padding: 2%;
@@ -115,7 +119,7 @@ h2 {
 #img-aside {
   float: right;
   width: 30%;
-  padding: 3% 4% 0 3%;
+  padding: 5% 4% 0 3%;
 }
 
 table, th, td {
