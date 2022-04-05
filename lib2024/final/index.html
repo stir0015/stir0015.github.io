@@ -7,7 +7,10 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Jamie Stirling">
     <title>LIB2024 Final Assignment</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">  
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/fonts.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <style type="text/css">
       main {
         background: url("img/dust_scratches.png");
@@ -91,11 +94,11 @@
     <section id="profile-section" class="main-section">
       <div id="form-display" class="profile">
         <h2>Profile Info</h2>
-          <p>Name: <span id="full-name_result"></span></p>
+          <p>Name: <span id="name_result"></span></p>
           <p>Email: <a href="#" id="email_result"></a></p>
           <p>Address: <span id="address_result"></span></p>
           <p>City: <span id="city_result"></span></p>
-          <p>P/T: <span id="province-territories_result"></span></p>
+          <p>P/T: <span id="province_result"></span></p>
           <p>Postal Code: <span id="postal-code_result"></span></p>
         </div>
 
@@ -105,7 +108,7 @@
 
           <div id="name-container" class="form-elm">
             <label for="full-name">Name</label>
-            <input type="text" name="name" id="full-name" title="Enter first and last name">
+            <input type="text" name="name" id="name" title="Enter first and last name">
           </div>
 
           <div id="email-container" class="form-elm">
@@ -124,8 +127,8 @@
           </div>
 
           <div id="province-container" class="form-elm">
-            <label for="province-territories">Province/ Territory</label>
-            <select name="province-territories" id="province-territories">
+            <label for="province">Province</label>
+            <select name="province" id="province">
               <option value="select" selected>Select a province or territory</option>
               <optgroup label="Provinces">
                 <option value="alberta">Alberta</option>
@@ -163,11 +166,10 @@
     <nav id="second-nav" class="bottom-banner">
       <h3>Quick Links</h3>
       <ul id="quick-links">
-        <li><a class="qlinks" href="#home">Home</a></li>
-        <li><a class="qlinks" href="#news">About</a></li>
-        <li><a class="qlinks" href="#contact">Schedule</a></li>
-        <li><a class="qlinks" href="#about">Portfolio</a></li>
-        <li><a class="qlinks" href="#about">Contact</a></li>
+        <li><a class="qlinks" href="#contact">SCHEDULE</a></li>
+        <li><a class="qlinks" href="#news">ABOUT</a></li>
+        <li><a class="qlinks" href="#about">PORTFOLIO</a></li>
+        <li><a class="qlinks" href="#about">CONTACT</a></li>
       </ul>
     </nav>
     <div id="gonqwc" class="bottom-banner">

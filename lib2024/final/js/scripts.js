@@ -2,6 +2,25 @@ window.onload = init;
 
 function init() {
 
+	// JQuery function attached to the submit event of the form with id "form"
+	$('#profile').submit(function (e) {
+		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
+   		 e.preventDefault();
+   		 // passing the current form (this) to variable form 
+   		 $("#form-display").removeClass('reveal');
+   		 /*var form = this;
+   		 // fadeIn is a jQuery function to fadeIn an element 
+   		 $(".overlay-container").fadeIn(1000, function(){
+   		 		//call the showFormValues function and pass variable form to it as argument
+   		 		showformValues(form);
+		   		 // fadeOut is a jQuery function to fadeOut an element 
+   		 		$('.overlay-container').delay(500).fadeOut(500);
+   		 		$("#results").addClass('reveal');
+   		 })*/
+	});
+
+}
+
 // to show the form values in the results div which takes the argument "form"
 function showformValues(form){
 	//serializeArray is a jquery function used to get the values of a form as js Object
@@ -23,3 +42,5 @@ function showformValues(form){
 			$("#form-display").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
 	})				
+}
+
