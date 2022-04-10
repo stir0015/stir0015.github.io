@@ -17,7 +17,7 @@
 				<strong>Qus: </strong>
 				What are the three components of Web?
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				CSS, JavaScript, & HTML
 			</p>
@@ -27,7 +27,7 @@
 				<strong>Qus:</strong>
 				Define version control and give one example.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans:</strong>
 				Version control records changes to a file so that specific iterations can be recalled later. GitHub is an example of version control. 
 			</p>
@@ -37,7 +37,7 @@
 				<strong>Qus: </strong>
 				What tag is used to create the title of a web page? Give an example.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				Title is used to create a title of a web page.<br>
 				Example: &lt;title&gt;This is a Title&lt;/title&gt;
@@ -48,7 +48,7 @@
 				<strong>Qus: </strong>
 				What tag is used to create a paragraph in HTML? Give an example. 
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				The "p" paragraph tag would be used.<br>
 				Example: &lt;p&gt;This is a paragraph.&lt;/p&gt;
@@ -59,7 +59,7 @@
 				<strong>Qus: </strong>
 				Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				&lt;a&gt; is the odd one out because it is an attribute and the others are elements. 
 			</p>
@@ -69,7 +69,7 @@
 				<strong>Qus: </strong>
 				What tags are required to create a navigation list in HTML?
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				We need the &lt;nav&gt; to start the navigation container. We then need a list element of some kind, either an ordered &lt;ol&gt;, unordered &lt;ul&gt;, or descriptive &lt;dl&gt; list child to start organised the items in the list. The items are inputed using the link &lt;li&gt; tag.  
 			</p>
@@ -79,7 +79,7 @@
 				<strong>Qus: </strong>
 				What element is used to create images? Name its attributes.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				The &lt;img&gt; tag is used to create images. The source &lt;src&gt; tag informs on the location to pull the image file from. The alternate &lt;alt&gt; tag creates the hover text that can be interpreted by Screen Readers and is used for SEO and it will display incase the image link is broken. Finally, the size designators, &lt;height&gt; and &lt;width&gt;, will indcate how many pixels high and wide the image will rendor on the web page. 
 			</p>
@@ -89,7 +89,7 @@
 				<strong>Qus: </strong>
 				Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;tb&gt; and state the reason. 
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				The &lt;b&gt; is a tag that will bold the output text font. The other tags are elements of a table in HTML. 
 			</p>
@@ -99,7 +99,7 @@
 				<strong>Qus: </strong>
 				Give an example of a colour picker input.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				#00FF00
 			</p>
@@ -109,7 +109,7 @@
 				<strong>Qus: </strong>
 				What is the use of name and value attributes? Give two examples.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				A name attribute works as an identifier, while a value attribute specifies the value of an &lt;input&gt; element <br>
 				Ex: <br>
@@ -122,7 +122,7 @@
 				<strong>Qus: </strong>
 				Give an example of an inline style.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				&lt;p style="color:red;"> Text in Red. &lt;/p> 
 			</p>
@@ -132,7 +132,7 @@
 				<strong>Qus: </strong>
 				How would you link an external style sheet? Give an example.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				Place the document in a seperate file inside the overall project file and 
 				&lt; link rel="stylesheet" type="text/css" href="css/style.css" &gt;  
@@ -143,7 +143,7 @@
 				<strong>Qus: </strong>
 				Create a CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				#qcenter { <br>
   &emsp;&emsp;&emsp;position: absolute; <br>
@@ -159,7 +159,7 @@
 				<strong>Qus: </strong>
 				Create CSS keyframes block called "spin" that rotates an element.
 			</p>
-			<p>
+			<p class="ans">
 				<strong>Ans: </strong>
 				@keyframes spin { <br>
   				&emsp; &emsp;&emsp; &emsp;100% {transform: rotate(360deg);}<br>
@@ -176,6 +176,56 @@
 			<p id="transition" class="rotate-me">
 				<strong>Ans: </strong>
 				See here. 
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you include create an alert with string "I Love JavaScript" using JavaScript?
+			</p>
+			<p class="ans">
+				<strong>Ans: </strong>
+				alert(#alert-container+"I Love JavaScript")
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?
+			</p>
+			<p class="ans">
+				<strong>Ans: </strong>
+				$("#fade-me").fadeIn(300, function()
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you select all elements with class "my-class" using Javascript and JQuery?
+			</p>
+			<p class="ans">
+				<strong>Ans: </strong>
+				getElementsByClassName("my-class")
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Give an example of input field that takes phone number with format "123-456-7890"?
+			</p>
+			<p class="ans">
+				<strong>Ans: </strong>
+				&lt;input type="tel" name="mobile-number" id="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Among HTML, CSS, JavaScript, and JQuery, what language did you like the best? State the reason. 
+			</p>
+			<p class="ans">
+				<strong>Ans: </strong>
+				I enjoyed CSS. I had previously learned HTML in 2011, so it was more of a review, and CSS was a fun and manageable challenge for this class. 
 			</p>
 		</li>
 	</ol>

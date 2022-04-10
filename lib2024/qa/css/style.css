@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+.ans {
+  color: #00009A;
+}
+
 .rotate-me {
   margin: auto;
   width: 200px;
