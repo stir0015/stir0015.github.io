@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="This is a HTML document containing HTML tags" >
-    <meta name="keywords" content="HTML, HTML5, Advanced HTML, New Tags, Special Tags">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="author" content="Jamie Stirling">
-    <title>LIB2024 Final Assignment</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/fonts.css"> 
-    <style>
-      main {
-        background: url("img/dynamic-style.png");
-      }
-    </style> 
-    <!-- Included background styling here because the linking would not work in the external style sheet -->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This is a HTML document containing HTML tags" >
+  <meta name="keywords" content="HTML, HTML5, Advanced HTML, New Tags, Special Tags">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Jamie Stirling">
+  <title>LIB2024 Final Assignment</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"> 
+  <style>
+    main {
+      background: url("img/dynamic-style.png");
+    }
+  </style> 
+  <!-- Included background styling here because the linking would not work in the external style sheet -->
+</head>
+<body>
   <header class="header">
     <h1> My Logo </h1>
     <nav id="main-nav" class="top-banner"> <!-- Horizontal navbar using float left for a list of articles -->
@@ -30,6 +31,9 @@
   </header>
 
   <main class="main">
+    <div class="buffer-container buffer-box">
+      <div class="buffer"></div>
+    </div>
     <section id="first-section" class="main-section clearfix">
       <aside id="img-aside">
         <figure id="image-1" class="css-trans">
@@ -95,21 +99,21 @@
       </section> <br>
 
       <section id="profile-section" class="main-section">
-        <article id="form-display" class="profile"> <!-- Form display / Profile Info -->
+        <article id="form-display" class="profile-form"> <!-- Form display / Profile Info -->
           <h2>PROFILE INFO</h2>
-          <div id="display-container" class="profile">
+          <div id="display-container" class="profile-form">
             <i id="user-icon" class="fa-solid fa-user fa-10x"></i> <!-- linked to icon on Font Awesome using script on line 172-->
-            <div id="profile-info" class="profile">
-              <p id="profile-name">Jane Doe <span id="name_result"></span></p>
-              <p>jane.doe@example.com<a href="#" id="email_result"></a></p>
-              <p>Address Line 1, <span id="address_result"></span>City<span id="city_result"></span></p>
-              <p>Province, <span id="province_result"></span>A0A 0A0<span id="postal-code_result"></span></p>
-              <button id="mailto"><i  class="fa-regular fa-envelope fa-2xl"></i></button>
+            <div id="profile-info" class="profile-form">
+              <p id="profile-name"><span id="name_result">Jane Doe </span></p>
+              <p><span id="email_result">jane.doe@example.com</span></p>
+              <p><span id="address_result">Address Line 1</span>, <span id="city_result">City</span>,</p>
+              <p><span id="pt_result">Province</span>, <span id="pc_result">A0A 0A0</span></p>
+              <i id="mailto" class="fa-regular fa-envelope fa-3x"></i>
             </div>
           </div>
         </article>
 
-        <article id="form" class="profile clearfix"> <!-- Form / Edit Profile -->
+        <article id="form" class="profile-form clearfix"> <!-- Form / Edit Profile -->
           <h2>EDIT PROFILE</h2> <br>
           <form action="submit.php" method="post" id="profile" class="clearfix">
 
@@ -135,7 +139,7 @@
 
             <div id="province-container" class="form-elm">
               <label for="province">Province</label>
-              <select name="province" id="province" required>
+              <select name="pt" id="province" required>
                 <option value="" selected>Select a province or territory</option>
                 <optgroup label="Provinces">
                   <option value="AB">Alberta</option>
@@ -159,13 +163,12 @@
             </div>
             <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
               <label for="postal-code">Postal Code</label>
-              <input type="text" name="postal-code" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space." placeholder="A0A 0A0" required> 
+              <input type="text" name="pc" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space." placeholder="A0A 0A0" required> 
             </div>
 
-            <button type="submit" id="submit">SUBMIT</button>
+            <button type="submit" id="submit">SUBMIT</button> <!--Submit button attached to showProfileValues function -->
           </form>
         </article>
-        <script type="text/javascript" src="js/scripts.js"></script>
       </section>
     </main>
 
@@ -182,27 +185,28 @@
       <div id="gonqwc" class="bottom-banner">
         <h3>ADDRESS</h3>
         <a href="https://www.google.com/maps/place/Algonquin+College+Ottawa+Campus/@45.3499278,-75.7571255,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0718cc4a6ad7:0xc6cc467725843e2b!8m2!3d45.3499278!4d-75.7549368">
-          <p class="gonqadd"> 1385 Woodroffe Ave. </p>
+          <p class="gonqadd"> 1385 Woodroffe Ave. </p> <!--Address links to Google Maps location -->
           <p class="gonqadd"> Nepean, ON K2G 1V8 </p>
           <p class="gonqadd"> Canada</p>
         </a>
       </div>
       <nav id="soc-links" class="bottom-banner">
         <h3>FOLLOW US</h3>
-        <a href="https://www.facebook.com/" title="Link to Facebook Page"> 
-          <img id="fb" class="link-logo" alt="Facebook Logo" src="img/facebook.png">
+        <a href="https://www.facebook.com/" title="Link to Facebook Page" class="link-logos"> 
+          <i class="fa-brands fa-facebook-square fa-4x" style="color: #1877F2;"></i>
         </a>
-        <a href="https://www.youtube.com/" title="Link to Youtube Channel"> 
-          <img id="yt" class="link-logo" alt="YouTube Logo" src="img/youtube.png">
+        <a href="https://www.youtube.com/" title="Link to Youtube Channel" class="link-logos"> 
+          <i class="fa-brands fa-youtube fa-4x" style="color: #CD201F;"></i>
         </a>
-        <a href="https://www.twitter.com/" title="Link to Twitter Page"> 
-          <img id="tw" class="link-logo" alt="Twitter Logo" src="img/twitter.png">
+        <a href="https://www.twitter.com/" title="Link to Twitter Page" class="link-logos"> 
+          <i class="fa-brands fa-twitter fa-4x" style="color: #1DA1F2;"></i>
         </a>
       </nav>
     </footer>
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/e05e2f971a.js" crossorigin="anonymous"></script> <!--Font Awesome Link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/e05e2f971a.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+  </body>
   </html>
