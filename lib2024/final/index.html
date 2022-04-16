@@ -9,187 +9,200 @@
     <title>LIB2024 Final Assignment</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/fonts.css"> 
-    <style type="text/css">
+    <style>
       main {
-        background: url("img/dust_scratches.png");
+        background: url("img/dynamic-style.png");
       }
     </style> 
     <!-- Included background styling here because the linking would not work in the external style sheet -->
   </head>
   <header class="header">
-    <h1> My Logo Title </h1>
-    <nav id="main-nav" class="top-banner">
+    <h1> My Logo </h1>
+    <nav id="main-nav" class="top-banner"> <!-- Horizontal navbar using float left for a list of articles -->
       <ul class="link-container">
-        <li id="hlink" class="page-links"><a class="page-links" href="#home">Home</a></li>
-        <li id="alink" class="page-links"><a class="page-links" href="#about">About</a></li>
-        <li id="slink" class="page-links"><a class="page-links" href="#chedule">Schedule</a></li>
-        <li id="plink" class="page-links"><a class="page-links" href="#portfolio">Portfolio</a></li>
-        <li id="clink" class="page-links"><a class="page-links" href="#contact">Contact</a></li>
+        <li class="page-links"><a class="page-links" href="#home">HOME</a></li>
+        <li class="page-links"><a class="page-links" href="#about">ABOUT</a></li>
+        <li class="page-links"><a class="page-links" href="#schedule">SCHEDULE</a></li>
+        <li class="page-links"><a class="page-links" href="#portfolio">PORTFOLIO</a></li>
+        <li class="page-links"><a class="page-links" href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
+
   <main class="main">
     <section id="first-section" class="main-section clearfix">
-      <aside id="img-aside" class="img-overlay">
-        <figure id="image-1" class="image-side">
+      <aside id="img-aside">
+        <figure id="image-1" class="css-trans">
+          <img src="img/mountain.png" alt="Mountain scene"> <!-- Image floated to right with CSS transition "drop" -->
+        </figure>
+        <figure id="image-overlay" class="overlay"> <!-- JS Lightbox -->
           <img src="img/mountain.png" alt="Mountain scene">
         </figure>
       </aside>
 
       <article>
-        <h2>About</h2> <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris magna, pulvinar id interdum id, varius et tellus. Praesent eu aliquam elit. Sed eu viverra enim. Nullam in semper ligula. Maecenas at elit eget quam interdum tristique eu eget lectus. Sed lorem lectus, aliquet eu eleifend eget, cursus in mi. Proin ut lectus mollis, luctus diam eget, finibus eros. Vivamus vitae nisl posuere, rhoncus arcu a, viverra purus. Proin, dignissim ac lacus at, interdum sagittis libero. Vestibulum pharetra lacus id lectus commodo imperdiet. Sed laoreet eu mauris id accumsan. </p><br>
+        <h2>ABOUT</h2> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris magna, pulvinar id interdum id, varius et tellus. Praesent eu aliquam elit. Sed eu viverra enim. Nullam in semper ligula. Maecenas at elit eget quam interdum tristique eu eget lectus. Sed lorem lectus, aliquet eu eleifend eget, cursus in mi. Proin ut lectus mollis, luctus diam eget, finibus eros. Vivamus vitae nisl posuere, rhoncus arcu a, viverra purus. Proin, dignissim ac lacus at, interdum sagittis libero. Vestibulum pharetra lacus id lectus commodo imperdiet. Sed laoreet eu mauris id accumsan. Donec mi sem, eleifend non lorem. Etiam dui erat, imperdiet sed leo at, euismod efficitur nibh. Nullam in semper ligula. </p><br>
 
-        <p>Maecenas posuere tincidunt fermentum. Curabitur faucibus tristique nibh at suscipit. Morbi semper lorem venenatis tortor rhoncus, a finibus lectus euismod. Ut ante velit, facilisis nec dictum quis, vulputate vel enim. Donec bibendum fermentum porta. Donec mi sem, eleifend non lorem. Etiam dui erat, imperdiet sed leo at, euismod efficitur nibh.<p> <br>
+        <p>Maecenas posuere tincidunt fermentum. Curabitur faucibus tristique nibh at suscipit. Morbi semper lorem venenatis tortor rhoncus, a finibus lectus euismod. Ut ante velit, facilisis nec dictum quis, vulputate vel enim. Donec bibendum fermentum porta. Donec mi sem, eleifend non lorem. Etiam dui erat, imperdiet sed leo at, euismod efficitur nibh. Nullam in semper ligula. Maecenas at elit eget quam interdum tristique eu eget lectus. Sed lorem lectus, aliquet eu eleifend eget, cursus in mi.Sed lorem lectus, aliquet eu eleifend eget, cursus in mi. Praesent eu aliquam elit. Proin, dignissim ac lacus at, interdum sagittis libero. Vestibulum pharetra lacus id lectus commodo imperdiet. Sed laoreet eu mauris id accumsan.<p> <br>
         </article>
-    </section>
+      </section>
 
-    <section id="sched-section" class="main-section">
-      <h2>Schedule</h2> <br>
-      <table>
-        <tr>
-          <th>TIME</th>
-          <th>MONDAY</th>
-          <th>TUESDAY</th>
-          <th>WEDNESDAY</th>
-          <th>THURSDAY</th>
-          <th>FRIDAY</th>
-        </tr>
-        <tr>
-          <td>09:00 - 11:00</td>
-          <td>Communications 1</td>
-          <td>Client Services</td>
-          <td>Special Collections</td>
-          <td>Directed Research Seminar</td>
-          <td>Client Services</td>
-        </tr>
-        <tr>
-          <td>11:00 - 12:30</td>
-          <td>Reference</td>
-          <td>Internet App</td>
-          <td>Library Software</td>
-          <td>French</td>
-          <td>Reference</td>
-        </tr>
-        <tr>
-          <td>14:00 - 15:00</td>
-          <td>Acquisitions</td>
-          <td>General Elective</td>
-          <td>Marketing</td>
-          <td>Emerging Library Tech</td>
-          <td>Library Software</td>
-        </tr>
-        <tr>
-          <td>15:30 - 17:30</td>
-          <td>French</td>
-          <td>French</td>
-          <td>Acquisitions</td>
-          <td>Subject Analysis</td>
-          <td>Internet App</td>
-        </tr>
-      </table>
-    </section> <br>
+      <section id="sched-section" class="main-section"> <!-- Schedule using HTML table-->
+        <h2>SCHEDULE</h2> <br>
+        <table>
+          <tr>
+            <th>TIME</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+          </tr>
+          <tr>
+            <td>09:00 - 11:00</td>
+            <td>Communications 1</td>
+            <td>Client Services</td>
+            <td>Special Collections</td>
+            <td>Directed Research Seminar</td>
+            <td>Client Services</td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:30</td>
+            <td>Reference</td>
+            <td>Internet App</td>
+            <td>Library Software</td>
+            <td>French</td>
+            <td>Reference</td>
+          </tr>
+          <tr>
+            <td>14:00 - 15:00</td>
+            <td>Acquisitions</td>
+            <td>General Elective</td>
+            <td>Marketing</td>
+            <td>Emerging Library Tech</td>
+            <td>Library Software</td>
+          </tr>
+          <tr>
+            <td>15:30 - 17:30</td>
+            <td>French</td>
+            <td>French</td>
+            <td>Acquisitions</td>
+            <td>Subject Analysis</td>
+            <td>Internet App</td>
+          </tr>
+        </table>
+      </section> <br>
 
-    <section id="profile-section" class="main-section">
-      <div id="form-display" class="profile">
-        <h2>Profile Info</h2>
-          <p>Name: <span id="name_result"></span></p>
-          <p>Email: <a href="#" id="email_result"></a></p>
-          <p>Address: <span id="address_result"></span></p>
-          <p>City: <span id="city_result"></span></p>
-          <p>P/T: <span id="province_result"></span></p>
-          <p>Postal Code: <span id="postal-code_result"></span></p>
-        </div>
-
-      <article id="form" class="profile clearfix">
-        <h2>Edit Profile</h2> <br>
-        <form action="submit.php" method="post" id="profile" class="clearfix">
-
-          <div id="name-container" class="form-elm">
-            <label for="full-name">Name</label>
-            <input type="text" name="name" id="name" title="Enter first and last name">
+      <section id="profile-section" class="main-section">
+        <article id="form-display" class="profile"> <!-- Form display / Profile Info -->
+          <h2>PROFILE INFO</h2>
+          <div id="display-container" class="profile">
+            <i id="user-icon" class="fa-solid fa-user fa-10x"></i> <!-- linked to icon on Font Awesome using script on line 172-->
+            <div id="profile-info" class="profile">
+              <p id="profile-name">Jane Doe <span id="name_result"></span></p>
+              <p>jane.doe@example.com<a href="#" id="email_result"></a></p>
+              <p>Address Line 1, <span id="address_result"></span>City<span id="city_result"></span></p>
+              <p>Province, <span id="province_result"></span>A0A 0A0<span id="postal-code_result"></span></p>
+              <button id="mailto"><i  class="fa-regular fa-envelope fa-2xl"></i></button>
+            </div>
           </div>
+        </article>
 
-          <div id="email-container" class="form-elm">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" title="Enter email">
-          </div>
+        <article id="form" class="profile clearfix"> <!-- Form / Edit Profile -->
+          <h2>EDIT PROFILE</h2> <br>
+          <form action="submit.php" method="post" id="profile" class="clearfix">
 
-          <div id="address-container" class="form-elm">
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address" title="Enter Address Line 1"> 
-          </div>
+            <div id="name-container" class="form-elm">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" title="Enter first and last name" placeholder="Jane Doe" required>
+            </div>
 
-          <div id="city-container" class="form-elm">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" title="Enter City">
-          </div>
+            <div id="email-container" class="form-elm">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" title="Enter email" placeholder="jane.doe@example.com" required>
+            </div>
 
-          <div id="province-container" class="form-elm">
-            <label for="province">Province</label>
-            <select name="province" id="province">
-              <option value="select" selected>Select a province or territory</option>
-              <optgroup label="Provinces">
-                <option value="alberta">Alberta</option>
-                <option value="british_columbia">British-Columbia</option>
-                <option value="manitoba">Manitoba</option>
-                <option value="new_brunswick">New Brunswick</option>
-                <option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
-                <option value="nova_scotia">Nova Scotia</option>
-                <option value="ontario">Ontario</option>
-                <option value="prince_edward_island">Prince Edward Island</option>
-                <option value="quebec">Quebec</option>
-                <option value="saskatchewan">Saskatchewan</option>
-              </optgroup>
-              <optgroup label="Territories">
-                <option value="northwest_territories">Northwest Territories</option>
-                <option value="nunavut">Nunavut</option>
-                <option value="yukon">Yukon</option>
-              </optgroup>
-            </select>
+            <div id="address-container" class="form-elm">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address" title="Enter Address Line 1" placeholder="Address Line 1" required> 
+            </div>
 
-          </div>
-          <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
-            <label for="postal-code">Postal Code</label>
-            <input type="text" name="postal-code" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space."> 
-          </div>
+            <div id="city-container" class="form-elm">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" title="Enter City" placeholder="City" required>
+            </div>
 
-          <button type="submit">SUBMIT</button>
-        </form>
-      </article>
-      <script type="text/javascript" src="js/scripts.js"></script>
-    </section>
+            <div id="province-container" class="form-elm">
+              <label for="province">Province</label>
+              <select name="province" id="province" required>
+                <option value="" selected>Select a province or territory</option>
+                <optgroup label="Provinces">
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British-Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NL">Newfoundland and Labrador</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="ON">Ontario</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                </optgroup>
+                <optgroup label="Territories">
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="YT">Yukon</option>
+                </optgroup>
+              </select>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            </div>
+            <div id="post-container" class="form-elm"> <!-- Postal code in a text input with Canadian postal code pattern-->
+              <label for="postal-code">Postal Code</label>
+              <input type="text" name="postal-code" id="postal-code" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" title="Enter postcal code. Please include a space." placeholder="A0A 0A0" required> 
+            </div>
+
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+        </article>
+        <script type="text/javascript" src="js/scripts.js"></script>
+      </section>
+    </main>
+
+    <footer class="bottom-banner">
+      <nav id="second-nav" class="bottom-banner">
+        <h3>QUICK LINKS</h3>
+        <ul id="quick-links">
+          <li><a class="qlinks" href="#schedule">SCHEDULE</a></li>
+          <li><a class="qlinks" href="#about">ABOUT</a></li>
+          <li><a class="qlinks" href="#portfolio">PORTFOLIO</a></li>
+          <li><a class="qlinks" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="gonqwc" class="bottom-banner">
+        <h3>ADDRESS</h3>
+        <a href="https://www.google.com/maps/place/Algonquin+College+Ottawa+Campus/@45.3499278,-75.7571255,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0718cc4a6ad7:0xc6cc467725843e2b!8m2!3d45.3499278!4d-75.7549368">
+          <p class="gonqadd"> 1385 Woodroffe Ave. </p>
+          <p class="gonqadd"> Nepean, ON K2G 1V8 </p>
+          <p class="gonqadd"> Canada</p>
+        </a>
+      </div>
+      <nav id="soc-links" class="bottom-banner">
+        <h3>FOLLOW US</h3>
+        <a href="https://www.facebook.com/" title="Link to Facebook Page"> 
+          <img id="fb" class="link-logo" alt="Facebook Logo" src="img/facebook.png">
+        </a>
+        <a href="https://www.youtube.com/" title="Link to Youtube Channel"> 
+          <img id="yt" class="link-logo" alt="YouTube Logo" src="img/youtube.png">
+        </a>
+        <a href="https://www.twitter.com/" title="Link to Twitter Page"> 
+          <img id="tw" class="link-logo" alt="Twitter Logo" src="img/twitter.png">
+        </a>
+      </nav>
+    </footer>
+
     <script type="text/javascript" src="js/scripts.js"></script>
-    
-  </main>
-  <footer class="bottom-banner">
-    <nav id="second-nav" class="bottom-banner">
-      <h3>Quick Links</h3>
-      <ul id="quick-links">
-        <li><a class="qlinks" href="#contact">SCHEDULE</a></li>
-        <li><a class="qlinks" href="#news">ABOUT</a></li>
-        <li><a class="qlinks" href="#about">PORTFOLIO</a></li>
-        <li><a class="qlinks" href="#about">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div id="gonqwc" class="bottom-banner">
-      <h3>Address</h3>
-      <p style="color: white;"> 1386 Woodroffe Ave. <br>
-      Nepean, ON K2G 1V8 <br>
-      Canada</p>
-    </div>
-    <nav id="soc-links" class="bottom-banner">
-      <h3>Follow Us</h3>
-      <a href="https://www.facebook.com/" title="Link to Facebook Page"> 
-        <img id="fb" class="link-logo" alt="Facebook Logo" src="img/facebook.png">
-      </a>
-      <a href="https://www.youtube.com/" title="Link to Youtube Channel"> 
-        <img id="yt" class="link-logo" alt="YouTube Logo" src="img/youtube.png">
-      </a>
-      <a href="https://www.twitter.com/" title="Link to Twitter Page"> 
-        <img id="tw" class="link-logo" alt="Twitter Logo" src="img/twitter.png">
-      </a>
-    </nav>
-  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e05e2f971a.js" crossorigin="anonymous"></script>
+
+  </html>
